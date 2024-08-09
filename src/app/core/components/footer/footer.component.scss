@@ -1,0 +1,12 @@
+:host {
+  background-color: var(--color-dark-blue);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#copy {
+  margin: 0 20px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
