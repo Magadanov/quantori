@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <div class="account medium">
+    <mat-icon id="account-icon">person</mat-icon>
+  </div>
+  <div class="navbar">
+    <a class="nav" routerLink="home" routerLinkActive="active">Home</a>
+    <a class="nav" routerLink="contact" routerLinkActive="active">Contact</a>
+    <a class="nav" routerLink="about" routerLinkActive="active">About</a>
+  </div>
+  <div class="menu">
+    <app-login-button id="login-btn"></app-login-button>
+    <mat-icon id="menu-btn" (click)="menuButtonClick.emit()">
+      more_vert
+    </mat-icon>
+  </div>
+</mat-toolbar>

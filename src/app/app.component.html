@@ -1,0 +1,9 @@
+<app-header (menuButtonClick)="openSidenav()"></app-header>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [fixedInViewport]="true" mode="side">
+    <app-sidenav (closeButtonClick)="closeSidenav()"></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

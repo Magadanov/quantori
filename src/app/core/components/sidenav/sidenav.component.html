@@ -1,0 +1,36 @@
+<div class="header">
+  <div class="account large">
+    <mat-icon id="account-icon">person</mat-icon>
+  </div>
+</div>
+<div class="main">
+  <a
+    class="nav"
+    (click)="closeButtonClick.emit()"
+    routerLink="home"
+    routerLinkActive="active"
+  >
+    Home
+  </a>
+  <a
+    class="nav"
+    (click)="closeButtonClick.emit()"
+    routerLink="contact"
+    routerLinkActive="active"
+  >
+    Contact
+  </a>
+  <a
+    class="nav"
+    (click)="closeButtonClick.emit()"
+    routerLink="about"
+    routerLinkActive="active"
+  >
+    About
+  </a>
+</div>
+<div class="footer">
+  <app-login-button></app-login-button>
+</div>
+
+<mat-icon id="close-btn" (click)="closeButtonClick.emit()">close</mat-icon>
