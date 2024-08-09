@@ -1,9 +1,9 @@
 <app-header (menuButtonClick)="openSidenav()"></app-header>
 <mat-sidenav-container>
-  <mat-sidenav #sidenav [fixedInViewport]="true" mode="side">
+  <mat-sidenav #sidenav [fixedInViewport]="true" mode="over">
     <app-sidenav (closeButtonClick)="closeSidenav()"></app-sidenav>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content style="background-image: url('assets/bg-img.png')">
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

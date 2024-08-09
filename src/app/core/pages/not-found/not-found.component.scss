@@ -1,0 +1,13 @@
+@use "../../../../styles.scss";
+
+:host {
+  height: 100%;
+  @include styles.flex-center();
+}
+
+.container {
+  @include styles.flex-center();
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+}

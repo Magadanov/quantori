@@ -30,7 +30,7 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 500px) {
     display: none;
   }
 }
@@ -41,7 +41,7 @@
   align-items: center;
 
   #login-btn {
-    @media (max-width: 425px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
@@ -55,7 +55,7 @@
     font-size: 2rem;
     color: var(--color-sage-green);
 
-    @media (min-width: 425px) {
+    @media (min-width: 500px) {
       display: none;
     }
   }

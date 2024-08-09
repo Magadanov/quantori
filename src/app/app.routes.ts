@@ -1,21 +1,15 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from './main/pages/about/about.component';
-import { HomeComponent } from './main/pages/home/home.component';
-import { ContactComponent } from './main/pages/contact/contact.component';
+import { NotFoundComponent } from './core/pages/not-found/not-found.component';
 
 export const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'auth' },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+  },
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
+    loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  { path: 'contact', component: ContactComponent },
-  {
-    path: 'about',
-    component: AboutComponent,
-  },
+  { path: '**', component: NotFoundComponent },
 ];
