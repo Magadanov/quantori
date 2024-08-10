@@ -1,27 +1,35 @@
 # Quantori
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+This project was implemented for Quantori JavaScript Boot Camp 2024.
 
-## Development server
+1. Deploy: https://quantorimagadanov.netlify.app/
+2. Start 08.08.2024 / End 10.08.2024 / Deadline 14.08.2024
+
+## 🔎 Screenshot
+
+![alt text](localhost_4200_auth_login.png)
+
+## ⚠️ Warning
+
+To log in to the application, just enter any email address and password that meet the requirements. Because the constant username and password that are specified in dummy are already set.
+
+## 📌 Important
+
+There are points that I didn't clearly understand.
+
+- The application was implemented according to my logic, corresponding to the provided user interface design
+- Added guards if you couldn't navigate a certain path
+
+## 🛠️ Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+## 🌐 Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## ✨Further implementation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Implementation of the login/logout button in the header
+- Adding a user image and username for sidenav and header
+- Page implementation
