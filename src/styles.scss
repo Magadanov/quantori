@@ -103,12 +103,6 @@ a {
   }
 }
 
-@mixin flex-center() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 h2 {
   margin: 0;
   font-size: var(--h2-font-size);

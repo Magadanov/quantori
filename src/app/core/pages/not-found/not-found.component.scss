@@ -1,12 +1,16 @@
-@use "../../../../styles.scss";
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 :host {
   height: 100%;
-  @include styles.flex-center();
+  @include flex-center();
 }
 
 .container {
-  @include styles.flex-center();
+  @include flex-center();
   background-color: #fff;
   border-radius: 10px;
   padding: 40px;
