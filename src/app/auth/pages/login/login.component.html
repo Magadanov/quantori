@@ -1,1 +1,57 @@
-<p>login works!</p>
+<div class="container">
+  <h2 class="header">Login</h2>
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <fieldset>
+        <legend>Email</legend>
+        <input
+          formControlName="email"
+          type="email"
+          name="email"
+          id="email"
+          class="input-field"
+        />
+      </fieldset>
+      <div
+        *ngIf="
+          loginForm.get('email')?.invalid && loginForm.get('email')?.touched
+        "
+        class="error-message"
+      >
+        <div *ngIf="loginForm.get('email')?.errors?.['required']">
+          Email is required.
+        </div>
+        <div *ngIf="loginForm.get('email')?.errors?.['email']">
+          Invalid email format.
+        </div>
+      </div>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Password</legend>
+        <input
+          formControlName="password"
+          type="text"
+          name="password"
+          id="password"
+          class="input-field"
+        />
+      </fieldset>
+      <div
+        *ngIf="
+          loginForm.get('password')?.invalid &&
+          loginForm.get('password')?.touched
+        "
+        class="error-message"
+      >
+        <div *ngIf="loginForm.get('password')?.errors?.['required']">
+          Password is required.
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="form-actions">
+    <button type="button" class="button cancel-btn">Cancel</button>
+    <app-login-button (buttonClick)="onSubmit()"></app-login-button>
+  </div>
+</div>

@@ -1,4 +1,8 @@
 #login-btn {
   color: #fff;
   background-color: var(--color-sage-green);
+
+  &:hover {
+    scale: 1.1;
+  }
 }
